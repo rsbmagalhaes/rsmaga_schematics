@@ -18,3 +18,6 @@ variable "profile" {
   default = "b-2x8"
 }
 
+variable "vpc1" {
+  default = "vpc1"
+}
