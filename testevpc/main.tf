@@ -4,7 +4,7 @@ resource "ibm_is_vpc" "vpc1" {
 
 resource "ibm_is_vpc_route" "route1" {
   name        = "route1"
-  vpc         = ibm_is_vpc."vpc1"
+  vpc         = ibm_is_vpc.vpc1
   zone        = var.zone1
   destination = "192.168.4.0/24"
   next_hop    = "10.240.0.4"
